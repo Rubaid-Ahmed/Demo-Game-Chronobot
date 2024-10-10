@@ -11,14 +11,14 @@ config_version=5
 [application]
 
 config/name="ChronoBot"
-run/main_scene="res://levels/level.tscn"
+run/main_scene="res://levels/base_level.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://icon.svg"
 
 [display]
 
-window/size/viewport_width=640
-window/size/viewport_height=360
+window/size/viewport_width=480
+window/size/viewport_height=270
 window/size/window_width_override=960
 window/size/window_height_override=540
 window/stretch/mode="viewport"
@@ -51,3 +51,4 @@ jump={
 [rendering]
 
 textures/canvas_textures/default_texture_filter=0
+environment/defaults/default_clear_color=Color(0.447059, 0.129412, 0.533333, 1)
