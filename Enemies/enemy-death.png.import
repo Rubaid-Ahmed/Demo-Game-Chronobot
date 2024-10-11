@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://crb36gu2ujx1r"
-path="res://.godot/imported/props.png-73fd820c248aaa46f1a222ee26801402.ctex"
+uid="uid://8syahlbh3by5"
+path="res://.godot/imported/enemy-death.png-334c191d8089e77d5521e866751e5f59.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/PNG/environment/layers/props.png"
-dest_files=["res://.godot/imported/props.png-73fd820c248aaa46f1a222ee26801402.ctex"]
+source_file="res://Enemies/enemy-death.png"
+dest_files=["res://.godot/imported/enemy-death.png-334c191d8089e77d5521e866751e5f59.ctex"]
 
 [params]
 
