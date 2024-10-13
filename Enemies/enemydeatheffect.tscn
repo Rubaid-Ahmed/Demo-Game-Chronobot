@@ -1,0 +1,66 @@
+[gd_scene load_steps=8 format=3 uid="uid://xeduafq0fjbh"]
+
+[ext_resource type="Texture2D" uid="uid://c8whe0cyku6n1" path="res://Enemies/enemy-death.png" id="1_hajia"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ojqow"]
+atlas = ExtResource("1_hajia")
+region = Rect2(0, 0, 67, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6580x"]
+atlas = ExtResource("1_hajia")
+region = Rect2(67, 0, 67, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gx3lj"]
+atlas = ExtResource("1_hajia")
+region = Rect2(134, 0, 67, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gkuds"]
+atlas = ExtResource("1_hajia")
+region = Rect2(201, 0, 67, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ryshp"]
+atlas = ExtResource("1_hajia")
+region = Rect2(268, 0, 67, 48)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_lesrp"]
+animations = [{
+"frames": [],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ojqow")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6580x")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gx3lj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gkuds")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ryshp")
+}, {
+"duration": 1.0,
+"texture": null
+}],
+"loop": false,
+"name": &"enemy_death",
+"speed": 12.0
+}]
+
+[node name="enemydeatheffect" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_lesrp")
+animation = &"enemy_death"
+autoplay = "enemy_death"
+frame = 5
+frame_progress = 1.0
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 2.0
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
